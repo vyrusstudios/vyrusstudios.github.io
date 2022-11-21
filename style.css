@@ -18,3 +18,10 @@ body{
     min-height: 100vh;
     background: linear-gradient(rgb(161, 109, 186), rgb(87, 33, 140));
 }
+.games header .logo h1 a{
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
