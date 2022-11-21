@@ -12,3 +12,9 @@ body{
     max-width: 95%;
     margin: 0 auto;
 }
+.games{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(161, 109, 186), rgb(87, 33, 140));
+}
