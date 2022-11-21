@@ -101,7 +101,6 @@ nav ul li.active a{
     animation-timing-function: linear;
     animation-duration: .7s;
 }
-
 @keyframes bump {
     0% {
         transform: scale(1.07,1.07)
