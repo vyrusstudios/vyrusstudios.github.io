@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     overflow-x: hidden;
@@ -76,18 +76,24 @@ nav ul li.active a{
     font-weight: 600;
     color: white;
     margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 .games .content .main-text h3{
     font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.93);
     margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 .games .content .main-text h4{
     font-size: 14px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.93);
     margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
 .under-construction{
     width: 100%;
@@ -96,11 +102,25 @@ nav ul li.active a{
     align-items: center;
     justify-content: center;
 
-    animation: infinite;
-    animation-name: bump;
-    animation-timing-function: linear;
-    animation-duration: .7s;
+    animation: normal;
+    animation-name: fade-in;
+    animation-duration: 1s;
 }
+.sorry{
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1.02, 1.02);
+    transform: translate(-10%, -45%);
+}
+
 @keyframes bump {
     0% {
         transform: scale(1.07,1.07)
@@ -110,5 +130,13 @@ nav ul li.active a{
     }
     100% {
         transform: scale(1,1)
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
